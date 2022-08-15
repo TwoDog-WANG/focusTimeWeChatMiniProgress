@@ -1,0 +1,5 @@
+<view class="show-time-space">
+    <time-canvs class="time-canvas" duration-time="{{doing.durationTime}}" time-token="{{timeToken}}"></time-canvs>
+    <view class="doing-thing"><text class="doing-text">{{doing.thing}}</text></view>
+    <control-btn class="control-btn" bind:changeinterval="changeInterval"></control-btn>
+</view>

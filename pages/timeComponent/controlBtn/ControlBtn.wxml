@@ -1,0 +1,26 @@
+<view class="btn-space" >
+    <view class="reset-btn btn" data-name="reset" bind:tap="changeInterval">
+        <image src="../../public/icon/reset.png" class="image reset-img"></image>
+    </view>
+    <view class="continue-btn btn" data-name="continue" bind:tap="changeInterval">
+        <image 
+            src="../../public/icon/pause.png" 
+            class="image pause-img" 
+            wx:if="{{isContinue}}"
+        >
+        </image>
+        <image 
+            src="../../public/icon/start.png" 
+            class="image start-img" 
+            wx:if="{{!isContinue}}"
+            >
+        </image>
+    </view>
+    <view class="quit-btn btn" data-name="quit" bind:tap="changeInterval">
+        <image 
+            src="../../public/icon/quit.png" 
+            class="image quit-img" 
+        >
+        </image>
+    </view>
+</view>

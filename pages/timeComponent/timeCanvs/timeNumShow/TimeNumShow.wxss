@@ -1,0 +1,16 @@
+.time-num-show-space {
+    font-size: 60rpx;
+    color: rgb(202, 202, 202);
+}
+.color-change {
+    animation: colorChange 0.6s ease-out;
+}
+@keyframes colorChange {
+    from, to {
+        color: rgb(202, 202, 202);
+    }
+    50% {
+        /* color: #66ccff; */
+        color: black;
+    }
+}

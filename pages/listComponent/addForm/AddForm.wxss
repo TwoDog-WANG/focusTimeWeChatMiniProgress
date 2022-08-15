@@ -1,0 +1,81 @@
+.overlay-space {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(92, 92, 92, 0.747);
+}
+.form-space {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 30rpx;
+    box-shadow: 4px 4px 15px 0px #4c4c4c;
+    padding: 50rpx 20rpx 20rpx;
+}
+.form-space .thing-space {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 1px #b1b1b1 solid;
+}
+.form-space .thing-space .thing-label {
+    display: block;
+    flex-shrink: 0;
+    font-size: 40rpx;
+}
+.form-space .thing-space .thing-input {
+    width: 50vw;
+    border: 1px #b1b1b1 solid;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}
+.form-space .time-space .time-input {
+    padding: 30rpx 0;
+    font-size: 40rpx;
+    border-bottom: 1px #b1b1b1 solid;
+}
+.form-space .type-space .type-select {
+    padding: 30rpx 0;
+    font-size: 40rpx;
+    border-bottom: 1px #b1b1b1 solid;
+}
+.form-space .type-space .type-input-space {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 1px #b1b1b1 solid;
+}
+.form-space .type-space .type-input-space .type-input {
+    width: 50vw;
+    border: 1px #b1b1b1 solid;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}
+.form-space .type-space .type-input-space .add-type-btn {
+    display: block;
+    flex-shrink: 0;
+    font-size: 40rpx;
+    padding-right: 20rpx;
+}
+.form-space .btn-space {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-space .btn-space .btn {
+    width: 10vw;
+    height: 10vw;
+    margin: 20rpx;
+    border-radius: 10rpx;
+}
+.form-space .btn-space .btn .img {
+    width: 10vw;
+    height: 10vw;
+}

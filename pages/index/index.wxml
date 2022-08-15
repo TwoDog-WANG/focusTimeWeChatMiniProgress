@@ -1,0 +1,11 @@
+<view>
+    <show-list-component bind:startTime="startTime" bind:fistLode="fistLode" wx:if="{{!isShowTimeCanvs}}" isFist="{{isFist}}"></show-list-component>
+    <page-container show="{{isShowTimeCanvs}}" z-index="100" overlay="{{true}}" bind:beforeleave="confimLeave">
+        <show-time-component 
+            wx:if="{{isShowTimeCanvs}}" 
+            index="{{index}}"
+            bind:quit="quitTime"
+        >
+        </show-time-component>
+    </page-container>
+</view>

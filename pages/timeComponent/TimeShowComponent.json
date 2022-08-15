@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "time-canvs": "./timeCanvs/TimeCanvs",
+        "control-btn": "./controlBtn/ControlBtn"
+    }
+}

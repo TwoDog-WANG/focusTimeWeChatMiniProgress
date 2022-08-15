@@ -1,0 +1,47 @@
+.list-show-space {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+}
+.list-show-space .contain-space {
+    flex: 1;
+}
+.list-show-space .null-arr-space {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.list-show-space .null-arr-space .null-text {
+    display: block;
+    text-align: center;
+    transform: translateY(-7vh);
+    font-size: 45rpx;
+}
+.list-show-space .btn-space {
+    margin-right: 32rpx;
+}
+.list-show-space .btn-space .inner-space {
+    height: 5vh;
+    display: flex;
+}
+.list-show-space .btn-space .inner-space .btn-inner-space {
+    background-color: rgba(173, 173, 173, 0.521);
+    border-radius: 12rpx;
+    margin-left: 20rpx;
+}
+.list-show-space .btn-space .multiple-space .btn-inner-space {
+    background-color: rgb(255, 255, 255);
+}
+.list-show-space .btn-space .inner-space .btn-inner-space .img {
+    width: 5vh;
+    height: 5vh;
+}
+
+.list-show-space .add-form-space {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}

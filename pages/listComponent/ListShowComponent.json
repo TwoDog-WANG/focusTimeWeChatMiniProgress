@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "list-item": "./listItem/ListItem",
+        "add-form": "./addForm/AddForm"
+    }
+}

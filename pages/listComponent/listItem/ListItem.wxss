@@ -1,0 +1,78 @@
+.list-item-space {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.list-item-space .multiple-check {
+    margin-left: 20rpx;
+}
+.list-item-space .multiple-check .box-group {
+    transform: scale(0.8);
+}
+.list-item-space .main-space {
+    flex: 1;
+    padding: 10rpx 0 10rpx 35rpx;
+    margin: 10rpx 20rpx;
+    background-image: linear-gradient(90deg, rgb(187 0 0), white);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+}
+.list-item-space .main-space .thing-space {
+    font-size: 40rpx;
+    font-weight: 500;
+    letter-spacing: 6rpx;
+}
+.list-item-space .main-space .thing-space .thing {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.list-item-space .main-space .time-space {
+    margin: 30rpx 0rpx 10rpx ;
+    letter-spacing: 5rpx;
+}
+
+.list-item-space .control-space {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+.list-item-space .control-space .show-space{
+    width: calc((6vw + 20rpx) * 2 + 3vw + 8vw);
+    height: 8vw;
+    overflow: hidden;
+    position: relative;
+}
+.list-item-space .control-space .show-space .ellipsis-btn {
+    width: 8vw;
+    height: 8vw;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 2px 5px gray;
+}
+.list-item-space .control-space .show-space .ellipsis-img {
+    width: 100%;
+    height: 100%;
+}
+.list-item-space .control-space .show-space .more-btn {
+    position: absolute;
+    top: 1vw;
+    left: calc((6vw + 20rpx) * 2 + 3vw);
+    transition: left 0.15s ease-out;
+    padding-right: 3vw;
+    display: flex;
+}
+.list-item-space .control-space .show-space .more-btn.show {
+    left: 0;
+}
+.list-item-space .control-space .show-space .more-btn .img{
+    width: 6vw;
+    height: 6vw;
+    margin-left: 20rpx;
+}

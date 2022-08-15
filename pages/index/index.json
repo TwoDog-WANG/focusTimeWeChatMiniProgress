@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "show-time-component": "../timeComponent/TimeShowComponent" ,
+        "show-list-component": "../listComponent/ListShowComponent"
+    }
+}

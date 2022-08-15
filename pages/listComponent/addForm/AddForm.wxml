@@ -1,0 +1,33 @@
+<view class="form-space">
+    <view class="thing-space">
+        <label for="inputThing" class="thing-label">事：</label>
+        <input type="text" name="inputThing" id="inputThing" data-key="thing" bind:change="inputChange" placeholder="请输入需要做的事" class="thing-input"/>
+    </view>
+    <view class="time-space">
+        <picker mode="multiSelector" range="{{multiTimeArr}}" value="{{timeIndexArr}}" bind:change="timeChange" class="time-input">
+            时间：{{timeStr}}
+        </picker>
+    </view>
+    <view class="type-space">
+        <picker mode="selector" range="{{typeArr}}" value="{{typeIndex}}" bind:change="choseType" class="type-select" wx:if="{{'!typeInputIsShow'}}">
+            类型：{{typeStr}}
+        </picker>
+        <view class="type-input-space" wx:if="{{'typeInputIsShow'}}">
+            <view class="add-type-btn" bind:tap="addType">添</view>
+            <input type="text" class="type-input" placeholder="添加新类型" data-key="newType" bind:change="inputChange"/>
+        </view>
+    </view>
+    <view class="btn-space">
+        <view class="add-btn btn" data-key="add" bind:tap="btnClick">
+            <view class="btn-img">
+                <image class="img" src="../../public/icon/confirm.png"></image>
+            </view>
+        </view>
+        <view class="cancel-btn btn" data-key="cancel" bind:tap="btnClick">
+            <view class="btn-img">
+                <image class="img" src="../../public/icon/cancel.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="overlay-space"></view>

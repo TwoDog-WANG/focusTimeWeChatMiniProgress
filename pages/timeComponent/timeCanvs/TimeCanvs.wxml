@@ -1,0 +1,7 @@
+<view class="time-canvs-space">
+    <canvas 
+        class="time-canvs"
+        type="2d"
+    ></canvas>
+    <time-num-space class="time-num-space" time-data="{{time}}"></time-num-space>
+</view>

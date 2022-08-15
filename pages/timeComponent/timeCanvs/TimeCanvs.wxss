@@ -1,0 +1,19 @@
+.time-canvs-space {
+    height: 100%;
+    position: relative;
+}
+
+.time-canvs-space .time-canvs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vw;
+}
+.time-canvs-space .time-num-space {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

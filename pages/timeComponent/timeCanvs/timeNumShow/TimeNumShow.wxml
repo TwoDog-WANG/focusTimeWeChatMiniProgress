@@ -1,0 +1,5 @@
+<view class="time-num-show-space">
+    <text class="hour-time {{numClassArr[0] ? 'color-change': ''}}" bindanimationend="clearNumArr">{{timeArr[0]}} : </text>
+    <text class="minute-time {{numClassArr[1] ? 'color-change': ''}}" bindanimationend="clearNumArr">{{timeArr[1]}} : </text>
+    <text class="second-time {{numClassArr[2] ? 'color-change': ''}}" bindanimationend="clearNumArr">{{timeArr[2]}}</text>
+</view>

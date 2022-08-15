@@ -1,0 +1,33 @@
+<view class="list-item-space">
+    <view 
+        class="multiple-check"
+        wx:if="{{isMultiple}}"
+    >
+        <checkbox-group bind:change="clickCheck" class="box-group" data-key="{{active.id}}">
+            <checkbox value="{{active.id}}" class="check-box"></checkbox>
+        </checkbox-group>
+    </view>
+    <view class="main-space">
+        <view class="thing-space">
+            <text class="thing">{{active.thing}}</text>
+        </view>
+        <view class="time-space">
+            <text class="time">{{durationTime[0]}}:{{durationTime[1]}}:{{durationTime[2]}}</text>
+        </view>
+    </view>
+    <view class="control-space">
+        <view class="show-space">
+            <view class="ellipsis-btn" bind:tap="changeBtnIsShow">
+                <image class="ellipsis-img" src="../../public/icon/ellipsis.png"></image>
+            </view>
+            <view class="more-btn {{controlBtnIsShow ? 'show' : ''}}">
+                <view class="start-btn inner-btn" bind:tap="startTime" data-index="{{index}}">
+                    <image class="start-img img" src="../../public/icon/start.png"></image>
+                </view>
+                <view class="delete-btn inner-btn" data-key="{{active.id}}" bind:tap="deleteThing">
+                    <image class="delete-img img" src="../../public/icon/delete.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

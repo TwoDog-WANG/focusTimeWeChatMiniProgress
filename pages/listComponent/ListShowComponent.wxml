@@ -1,0 +1,45 @@
+<view class="list-show-space">
+    <view class="btn-space">
+        <view class="not-multiple-space inner-space" wx:if="{{!isMultiple}}">
+            <view class="add-space btn-inner-space" bind:tap="showForm">
+                <view class="add-btn">
+                    <image src="../public/icon/add.png" class="add-img img"></image>
+                </view>
+            </view>
+            <view class="sub-space btn-inner-space" bind:tap="showMultipleDelete">
+                <view class="sub-btn">
+                    <image src="../public/icon/sub.png" class="sub-img img"></image>
+                </view>
+            </view>
+        </view>
+        <view class="multiple-space inner-space" wx:if="{{isMultiple}}">
+            <view class="confirm-space btn-inner-space" bind:tap="confirmDelete">
+                <view class="confirm-btn">
+                    <image src="../public/icon/confirm.png" class="confirm-img img"></image>
+                </view>
+            </view>
+            <view class="cancel-space btn-inner-space" bind:tap="showMultipleDelete">
+                <view class="cancel-btn">
+                    <image src="../public/icon/cancel.png" class="cancel-img img"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <scroll-view class="contain-space" scroll-y="true" wx:if="{{!arrIsNull}}">
+        <list-item 
+            wx:for="{{thingArr}}" 
+            active="{{item}}" 
+            isMultiple="{{isMultiple}}"
+            index="{{index}}"
+            wx:key="{{item.id}}"
+            bind:startTime="startTime"
+            bind:checkThing="checkThing"
+            bind:deleteThing="deleteThing"
+        >
+        </list-item>
+    </scroll-view>
+    <view class="null-arr-space" wx:if="{{arrIsNull}}">
+        <text class="null-text">空的，啥也没有，快去加几个</text>
+    </view>
+    <add-form class="add-form-space" wx:if="{{formIsShow}}" bind:cancelForm="cancelForm" bind:addThing="addThing"></add-form>
+</view>
